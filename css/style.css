@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); /* para traer la fuente Roboto */
+*{ /* lo que está adentro del asterisco se aplica a toda la página a la vez */
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white; /* cambia el color de todas las letras */
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 150px; /* largo de la caja */
+    align-items: center;
+    box-shadow: 0px 0px 20px black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo{
+    background-color: black;
+    margin-right: 350px; /* el margin mueve el nav adentro del header. El padding mueve el a dentro del nav */
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.opciones{
+    display: flex;
+    background-color: black;
+    width: 500px;
+    height: 50px;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+.opciones a{
+    text-decoration: none;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+.opciones a:hover{
+    color: black; /* acá define el color de la letra al posar el puntero */
+    background-color: white; /* acá define el color del fondo al posar el puntero */
+    border-radius: 5px; /* acá define el redondeado del recuadro alrededor de la palabra del menú */
+}
+.mym:hover{
+    color: black; /* acá define el color de la letra al posar el puntero */
+    background-color: white; /* acá define el color del fondo al posar el puntero */
+    border-radius: 5px; /* acá define el redondeado del recuadro alrededor de la palabra del menú */
+}
+.mym{
+    text-decoration: none;
+    display: flex;
+    font-size: 70px;
+    font-weight: bold; /* para poner negrita al texto */
+    justify-content: center;
+}
+h1{
+    font-size: 100px;
+    color: black;
+    margin-top: 170px;
+}
+.inicio{
+    margin-top: 20px;
+}
+.calculadora:hover{
+    transform: rotate(360deg);
+    transition: 1s ease-in;
+}
+.otros{
+    margin-right: 30px;
+}
+.slider{
+    margin-top: 150px;
+}
+.slider ul{
+    width: 300%;
+    display: flex;
+    animation: cambio 9s infinite; /* para el movimiento de las imágenes. Cada ciclo le lleva 9 segundos y se repite infinitamente. "cambio" es el nombre */
+    animation-direction: alternate-reverse; /* efecto de la transición entre las imágenes. En éste caso, llega a la última y vuelve en reversa */
+}
+.slider li{
+    width: 100%;
+    height: 400px;
+    list-style: none;
+}
+.slider img{
+    height: 100%;
+    width: 100%;
+}
+@keyframes cambio{ /* para controlar los tiempos del cambio de las imágenes y las transiciones */
+    0% {margin-left: 0;}
+    25% {margin-left: 0;}
+    40% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+    80% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+section{
+    width: 80%;
+    margin: 0 auto; /* para centrar los elementos en el section */
+}
+p{
+    color: black;
+    font-size: 25px;
+    justify-content: center;
+    text-align: justify;
+}
+footer{
+    background-color: black;
+    width: 300%;
+    height: 100px;   
+}
+main {
+    margin-top: 150px;
+}
